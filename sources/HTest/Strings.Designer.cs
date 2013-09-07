@@ -61,6 +61,15 @@ namespace HTest {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tic-Tac-Toe is a game with minimum board 3x3..
+        /// </summary>
+        internal static string ErrMsg_BoardMinimumSize {
+            get {
+                return ResourceManager.GetString("ErrMsg_BoardMinimumSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Input sequence should not be empty..
         /// </summary>
         internal static string ErrMsg_SequenceShouldNotBeEmpty {
@@ -75,6 +84,24 @@ namespace HTest {
         internal static string ErrMsg_TicTacToeBoardShouldBeSquare {
             get {
                 return ResourceManager.GetString("ErrMsg_TicTacToeBoardShouldBeSquare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Winner row length should be at least 3..
+        /// </summary>
+        internal static string ErrMsg_WinnerRowLengthMinimum {
+            get {
+                return ResourceManager.GetString("ErrMsg_WinnerRowLengthMinimum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Winner row length should be less than board size..
+        /// </summary>
+        internal static string ErrMsg_WinnerRowLengthShouldBeLessThanBoardSize {
+            get {
+                return ResourceManager.GetString("ErrMsg_WinnerRowLengthShouldBeLessThanBoardSize", resourceCulture);
             }
         }
     }

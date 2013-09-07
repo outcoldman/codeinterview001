@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ErrMsg_BoardMinimumSize" xml:space="preserve">
+    <value>Tic-Tac-Toe is a game with minimum board 3x3.</value>
+  </data>
   <data name="ErrMsg_SequenceShouldNotBeEmpty" xml:space="preserve">
     <value>Input sequence should not be empty.</value>
   </data>
   <data name="ErrMsg_TicTacToeBoardShouldBeSquare" xml:space="preserve">
     <value>Tic Tac Toe board should be a square.</value>
+  </data>
+  <data name="ErrMsg_WinnerRowLengthMinimum" xml:space="preserve">
+    <value>Winner row length should be at least 3.</value>
+  </data>
+  <data name="ErrMsg_WinnerRowLengthShouldBeLessThanBoardSize" xml:space="preserve">
+    <value>Winner row length should be less than board size.</value>
   </data>
 </root>
