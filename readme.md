@@ -19,4 +19,16 @@ Result:
 Function `FindSubsequence` is implemented in file [Problem1.cs](sources/HTest/Problem1.cs). Unit tests are implemented in [Problem1Suites.cs](sources/HTest.Suites/Problem1Suites.cs). 
 
 
+## Problem #2
 
+A tic-tac-toe board is represented by a two dimensional vector. X is represented by `x`, O is represented by `o`, and empty is represented by `e`. A player wins by placing three Xs or three Os in a horizontal, vertical, or diagonal row. Write a function which analyzes a tic-tac-toe board and returns `x` if X has won, `o` if O has won, and `nil` if neither player has won.
+
+Example input:
+
+	[[x e o]
+	[x e e]
+	[x e o]]
+
+Result:
+
+	x

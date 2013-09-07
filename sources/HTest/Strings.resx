@@ -120,4 +120,7 @@
   <data name="ErrMsg_SequenceShouldNotBeEmpty" xml:space="preserve">
     <value>Input sequence should not be empty.</value>
   </data>
+  <data name="ErrMsg_TicTacToeBoardShouldBeSquare" xml:space="preserve">
+    <value>Tic Tac Toe board should be a square.</value>
+  </data>
 </root>

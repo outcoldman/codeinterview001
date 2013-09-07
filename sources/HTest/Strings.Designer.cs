@@ -68,5 +68,14 @@ namespace HTest {
                 return ResourceManager.GetString("ErrMsg_SequenceShouldNotBeEmpty", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tic Tac Toe board should be a square..
+        /// </summary>
+        internal static string ErrMsg_TicTacToeBoardShouldBeSquare {
+            get {
+                return ResourceManager.GetString("ErrMsg_TicTacToeBoardShouldBeSquare", resourceCulture);
+            }
+        }
     }
 }

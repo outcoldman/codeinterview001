@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Problem1Suites.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicTacToeSuites.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
