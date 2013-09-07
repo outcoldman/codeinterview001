@@ -18,6 +18,8 @@ Result:
 
 Function `FindSubsequence` is implemented in file [Problem1.cs](sources/HTest/Problem1.cs). Unit tests are implemented in [Problem1Suites.cs](sources/HTest.Suites/Problem1Suites.cs). 
 
+Algorithm has lineral time complexity `O(n)`.
+
 
 ## Problem #2
 
@@ -32,3 +34,11 @@ Example input:
 Result:
 
 	x
+
+### Answer
+
+In the problem definition I did not find any restrictions on board size, and based on tic-tac-toe [rules](http://boardgames.about.com/od/paperpencil/a/tic_tac_toe.htm), board can be with unlimited size and with different length of winner's row. 
+
+Class `TicTacToe` with function `FindWinner` is implemented in file [TicTacToe.cs](sources/HTest/TicTacToe.cs). Unit tests are implemented in [TicTacToeSuites.cs](sources/HTest.Suites/TicTacToeSuites.cs). Current implementation allows you to find winners in boards with unlimited size and with different lengths of winner's rows. This method does not validate if board has two winners, in this case it will return first winner it will find.
+
+Algorithm time complexity is `O(nxm)`, considering that board is always `n=m`, we have `O(n^2)`.
