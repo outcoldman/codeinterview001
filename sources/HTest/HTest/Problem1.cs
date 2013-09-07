@@ -29,21 +29,29 @@
             int sequenceIndex = 0;
             int sequenceLength = 1;
 
-            for (int i = 1; i < sequence.Length; i++)
+            // Searching for longest consecutive sub-sequence
+
+            int index = 1;
+            while (index < sequence.Length) 
             {
-                if (sequence[i] - sequence[i - 1] == 1)
+                bool consecutive = (sequence[index] - sequence[index - 1]) == 1;
+
+                if (consecutive)
                 {
-                    if (sequenceIndex + sequenceLength == i)
+                    if (sequenceIndex + sequenceLength == index)
                     {
                         sequenceLength++;
                     }
                     else
                     {
-                        sequenceIndex = i - 1;
+                        sequenceIndex = index - 1;
                         sequenceLength = 2;
                     }
                 }
-                else
+
+                index++;
+
+                if (consecutive == false || index == sequence.Length)
                 {
                     if (sequenceLength > maxSequenceLength)
                     {
@@ -53,12 +61,7 @@
                 }
             }
 
-            if (sequenceLength > maxSequenceLength)
-            {
-                maxSequenceIndex = sequenceIndex;
-                maxSequenceLength = sequenceLength;
-            }
-
+            // Reserve array for sub-sequence
             int[] result = new int[maxSequenceLength];
             for (int i = 0; i < maxSequenceLength; i++)
             {
